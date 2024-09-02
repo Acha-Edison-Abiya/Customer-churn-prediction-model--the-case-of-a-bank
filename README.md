@@ -11,40 +11,40 @@ The objective of this project is to build a machine learning model that predicts
 
 The dataset used in this project consists of 10,000 bank customers and includes 14 attributes such as:
 
-	- Credit score
-	- Geographical location (Germany, France, Spain)
-	- Gender (male, female)
-	- Age
-	- Tenure (years as a bank customer)
-	- Account balance
-	- Estimated salary
-	- Number of products purchased through the bank
-	- Credit card status
-	- Active member status
+- Credit score
+- Geographical location (Germany, France, Spain)
+- Gender (male, female)
+- Age
+- Tenure (years as a bank customer)
+- Account balance
+- Estimated salary
+- Number of products purchased through the bank
+- Credit card status
+- Active member status
 
 The dataset is imbalanced, with only 20% of customers having churned. This necessitated the use of techniques like SMOTE to balance the classes during model training.
 # Methodology
 
 ## Data Preprocessing and Cleaning:
-	- The dataset was cleaned by removing missing values, duplicates, and unnecessary columns.
-	- Features were categorized into numerical and categorical attributes for further analysis.
+- The dataset was cleaned by removing missing values, duplicates, and unnecessary columns.
+- Features were categorized into numerical and categorical attributes for further analysis.
 ## Exploratory Data Analysis (EDA):
-	- Visualizations such as box plots and histograms were used to understand the distribution of numerical attributes.
-	- The target variable (churn) was analyzed for distribution and imbalance.
-	- The relationship between the target variable and categorical attributes was explored through count plots.
+- Visualizations such as box plots and histograms were used to understand the distribution of numerical attributes.
+- The target variable (churn) was analyzed for distribution and imbalance.
+- The relationship between the target variable and categorical attributes was explored through count plots.
 ## Feature Engineering:
-	- New features were created by transforming existing attributes, such as tenure relative to age, credit score categories, and balance score categories.
-	- One-hot encoding was applied to categorical variables like geography and gender.
+- New features were created by transforming existing attributes, such as tenure relative to age, credit score categories, and balance score categories.
+- One-hot encoding was applied to categorical variables like geography and gender.
 ## 	Model Training:
-	- The data was split into training and test sets, and SMOTE was applied to the training set to handle class imbalance.
-	- Three models were trained: Random Forest with two different hyperparameter settings and LightGBM.
-	- MLflow was used to track and log experiments, including model parameters and performance metrics.
+- The data was split into training and test sets, and SMOTE was applied to the training set to handle class imbalance.
+- Three models were trained: Random Forest with two different hyperparameter settings and LightGBM.
+- MLflow was used to track and log experiments, including model parameters and performance metrics.
 ## Model Evaluation:
-	- The performance of each model was evaluated using metrics such as accuracy, F1 score, precision, recall, ROC AUC score, and confusion matrix.
-	- The models were also saved and evaluated for future use.
+- The performance of each model was evaluated using metrics such as accuracy, F1 score, precision, recall, ROC AUC score, and confusion matrix.
+- The models were also saved and evaluated for future use.
 ## Business Intelligence:
-	- The final model predictions were saved to a Delta table and visualized using Power BI to provide actionable insights for the bank.
-	- Key insights included the impact of product usage, geography, age, and credit score on churn rates.
+- The final model predictions were saved to a Delta table and visualized using Power BI to provide actionable insights for the bank.
+- Key insights included the impact of product usage, geography, age, and credit score on churn rates.
 # Results
 
 ### Results from Exploratory Data Analysis (EDA)
